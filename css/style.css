@@ -1,0 +1,297 @@
+
+/* ---- TO DO
+---- fiNIR html ( presque fini remplir PARTIE COMPÉTENCES CONTENUE ET A prospos )
+---- HOVER ET LINK SUR PROJET ----- CHECK ----
+---- NAVIGATION ( bien avancer mtn voir le design )
+---- PAGE D'ACEUILLE ( a voir avec de nouvelle compétence en js )
+---- Regler le PB  COMPÉTANCES 
+
+
+
+---- */
+
+
+/* ---- Globale---- */
+#accueil {
+    background: url(../Image/code-2.jpg);
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-size: 2354px;
+
+}
+
+section {
+    width: 100vw;
+    height: 100vh;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Arimo', sans-serif;
+}
+
+.comp {
+    background-color:lightblue;
+}
+.compe {
+    background-color: lightgoldenrodyellow;
+}
+.compet {
+    background-color: lightgreen;
+}
+.competa {
+    background-color: lightsalmon;
+}
+
+.competan {
+    background-color: orange;
+}
+/* ---- Selecteur de base ---- */
+
+.hover {
+    display: none;
+
+}
+
+.flex-base {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+}
+
+.flex-wrap {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.text-align {
+    text-align: center;
+}
+
+.flex-culum-center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.flex-row-alternate{
+    flex-direction: row-reverse;
+}
+
+.no-list-style {
+    list-style-type: none; 
+}
+
+.little-padding {
+    padding: 3px;
+}
+
+/* ---- Partie Menus ---- */
+
+nav {
+    position: fixed;
+    background-color: lightcoral;
+    width: 100vw;
+    padding: 0;
+    z-index: 1;
+}
+
+
+.link { 
+    transition: 0.3s ease;
+
+    color: #ffffff;
+    font-size: 20px;
+    text-decoration: none;
+  }
+.link:hover {
+    border-top: 2px solid #ffffff;
+    border-bottom: 2px solid #ffffff;
+    padding: 6px 0; 
+}
+
+.menus {
+    text-transform: uppercase;
+}
+  
+/* ---- Partie compétences ---- */
+
+
+.skill-title {
+    padding: 5px 5px;
+    margin: 5px;
+    border: solid 1px;
+    display: inline-block;
+    cursor: pointer;
+}
+
+
+article {
+    margin: 5px;
+    border: solid 1px;
+    display: inline-block;
+    cursor: pointer;
+    width: 40vw;
+    height: 30vh;
+    -webkit-box-shadow: inset 4px 4px 90px -15px rgba(5,5,5,0.68);
+    -moz-box-shadow: inset 4px 4px 90px -15px rgba(5,5,5,0.68);
+    box-shadow: inset 4px 4px 90px -15px rgba(5,5,5,0.68);
+}
+
+h2 {
+    font-size: 15px;
+}
+
+
+
+/* ---- Partie projet informatique ---- */
+
+ .img-size-info {
+    width: 34vw;
+    height: 28vh;
+    margin: 6px;
+    z-index: 2;
+}
+.container {
+    filter: grayscale(1);
+    -webkit-filter: grayscale(1);
+    -moz-filter: grayscale(1);
+    -o-filter: grayscale(1);
+    -ms-filter: grayscale(1)
+}
+
+.link-projet-informatique {
+    width: 30vw;
+    height: 70vh;
+}
+
+.text-description-informatique {
+    text-decoration: none;
+    text-align: center;
+    color: white;
+    text-transform: uppercase;
+    
+}
+
+.container {
+    position: relative;
+}
+
+
+.text-block {
+    position: absolute;
+    bottom: 89px;
+    font-weight: bold;
+    font-size: 12px;
+    display: none;
+    padding-left: 15px;
+    padding-right: 15px;
+
+}
+
+.container:hover .text-block {
+    display: block;
+}
+
+.container:hover {
+
+    filter: grayscale(0);
+    -webkit-filter: grayscale(0);
+    -moz-filter: grayscale(0);
+    -o-filter: grayscale(0);
+    -ms-filter: grayscale(0);
+}
+
+
+.text-description-informatique-p {
+    padding: 5px;
+    -webkit-box-shadow: inset 17px -12px 214px 70px rgba(0,0,0,0.47);
+    -moz-box-shadow: inset 17px -12px 214px 70px rgba(0,0,0,0.47);
+    box-shadow: inset 17px -12px 214px 70px rgba(0,0,0,0.47);
+}
+
+
+/* ---- Partie projet Audiovisuel ---- */  
+
+.Audiovisuel {
+  margin-left: 10vw;
+  margin-right: 10vw;
+}
+
+.projet-audiovisuel
+{
+  margin: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+/* ---- Partie A propos---- */ 
+
+ul {
+    width: 100%;
+
+}
+
+.img-size-logo {
+    width: 125%;
+}
+
+.a-propos {
+    margin-left: 10vw;
+    margin-right: 10vw;
+}
+
+
+.formulaire {
+
+    padding: 13px;
+}
+
+
+.feedback-input {
+    color: white;
+    font-size: 18px;
+    border-radius: 5px;
+    background-color: transparent;
+    border: 2px solid #CC6666;
+    padding: 13px;
+    margin-bottom: 15px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.feedback-input:focus { 
+    border: 2px solid #CC6666
+ }
+
+textarea {
+  height: 150px;
+  line-height: 150%;
+  resize:vertical;
+}
+
+.submit {
+    width: 100%;
+    background: #CC6666;
+    border-radius: 5px;
+    border: 0;
+    cursor: pointer;
+    color: white;
+    font-size: 24px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.submit:hover {
+     background:#CC4949; 
+}
+
+textarea {
+    margin-left: 20px;
+}
