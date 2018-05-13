@@ -1,28 +1,21 @@
 
 /* ---- TO DO
----- fiNIR html ( presque fini remplir PARTIE COMPÉTENCES CONTENUE ET A prospos )
+---- fiNIR html ( presque fini remplir PARTIE COMPÉTENCES CONTENUE ET A prospos ) -- PRESQUE CHECK ----
 ---- HOVER ET LINK SUR PROJET ----- CHECK ----
----- NAVIGATION ( bien avancer mtn voir le design )
----- PAGE D'ACEUILLE ( a voir avec de nouvelle compétence en js )
+---- NAVIGATION ( bien avancer mtn voir le design ) -- CHECK ----
+---- PAGE D'ACEUILLE ( a voir avec de nouvelle compétence en js ) 
 ---- Regler le PB  COMPÉTANCES 
-
 
 
 ---- */
 
 
 /* ---- Globale---- */
-#accueil {
-    background: url(../Image/code-2.jpg);
-    background-repeat: no-repeat;
-    background-size: auto;
-    background-size: 2354px;
-
-}
 
 section {
     width: 100vw;
     height: 100vh;
+    
 }
 
 body {
@@ -32,21 +25,33 @@ body {
 }
 
 .comp {
-    background-color:lightblue;
+    background-color: #4A849F;
 }
 .compe {
-    background-color: lightgoldenrodyellow;
+    background-color: #F5F1D5;
 }
 .compet {
-    background-color: lightgreen;
+    background-color: #B4D6C6;
 }
 .competa {
-    background-color: lightsalmon;
+    background-color:  #1B3440;
 }
 
-.competan {
-    background-color: orange;
+h2 {
+    font-size: 25px;
+    text-decoration: underline;
 }
+
+
+h3 {
+    font-size: 15px;
+}
+
+h4 {
+    font-size: 12px;
+    text-transform: uppercase;
+}
+
 /* ---- Selecteur de base ---- */
 
 .hover {
@@ -89,11 +94,72 @@ body {
     padding: 3px;
 }
 
+
+
+/* ------ Accueil ----- */
+#accueil {
+    background: url(../Image/code-2.jpg);
+
+    background-size: auto;
+    background-size: 2354px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+#accueil>div {
+    color: #F5F1D5;
+}
+
+.span-phrase-accroche {
+    display: inline-block;
+    line-height: 1.3em;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-top: solid;
+    border-bottom: solid;
+    border-width: 1px;
+    background-color: rgba(70, 132, 156, 0.5);
+    color: #F2F3EB;
+    font-family: 'Oswald', sans-serif;
+}
+
+.h1-phrase-accroche {
+    justify-content: center;
+    display: flex;
+    text-align: center;
+    color: honeydew;
+    padding-top: 15%;
+    text-transform: uppercase;
+    font-size: 33px;
+}
+.presentation {
+    width: 77%;
+    justify-content: center;
+    display: flex;
+    text-align: center;
+    font-size: 20px;
+    color: honeydew;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+
+.span-phrase-accroche-2 {
+    display: inline-block;
+    line-height: 1.3em;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-top: solid;
+    border-bottom: solid;
+    border-width: 1px;
+    background-color: rgba(246, 130, 98, 0.8);
+}
+
 /* ---- Partie Menus ---- */
 
 nav {
     position: fixed;
-    background-color: lightcoral;
+    background-color: #F2845C;
     width: 100vw;
     padding: 0;
     z-index: 1;
@@ -102,14 +168,13 @@ nav {
 
 .link { 
     transition: 0.3s ease;
-
-    color: #ffffff;
-    font-size: 20px;
+    color: #F5F1D5;
+    font-size: 17px;
     text-decoration: none;
   }
 .link:hover {
-    border-top: 2px solid #ffffff;
-    border-bottom: 2px solid #ffffff;
+    border-top: 2px solid #F5F1D5;
+    border-bottom: 2px solid #F5F1D5;
     padding: 6px 0; 
 }
 
@@ -136,15 +201,28 @@ article {
     cursor: pointer;
     width: 40vw;
     height: 30vh;
+    background-color: rgba(178, 214, 199, 0.1);
     -webkit-box-shadow: inset 4px 4px 90px -15px rgba(5,5,5,0.68);
     -moz-box-shadow: inset 4px 4px 90px -15px rgba(5,5,5,0.68);
     box-shadow: inset 4px 4px 90px -15px rgba(5,5,5,0.68);
+    overflow: hidden;
+
 }
 
-h2 {
-    font-size: 15px;
+
+
+.skill-description>p {
+    font-size: 12px;
 }
 
+.skill-description {
+    padding: 10px;
+    height: 30vh;
+}
+
+h5 {
+    text-align: center;
+}
 
 
 /* ---- Partie projet informatique ---- */
@@ -155,6 +233,8 @@ h2 {
     margin: 6px;
     z-index: 2;
 }
+
+
 .container {
     filter: grayscale(1);
     -webkit-filter: grayscale(1);
@@ -183,12 +263,11 @@ h2 {
 
 .text-block {
     position: absolute;
-    bottom: 89px;
-    font-weight: bold;
+    bottom: 20px;
     font-size: 12px;
-    display: none;
     padding-left: 15px;
     padding-right: 15px;
+    display: none;
 
 }
 
@@ -217,17 +296,23 @@ h2 {
 /* ---- Partie projet Audiovisuel ---- */  
 
 .Audiovisuel {
-  margin-left: 10vw;
-  margin-right: 10vw;
+    margin-left: 4vw;
+    margin-right: 4vw;
 }
 
 .projet-audiovisuel
 {
   margin: 10px;
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: space-between;
 }
+
+.projet-audiovisuel>p {
+    width: 50vw;
+}
+
+
 
 
 
@@ -243,10 +328,16 @@ ul {
 }
 
 .a-propos {
-    margin-left: 10vw;
-    margin-right: 10vw;
+margin-left: 4vw;
+    margin-right: 4vw;
 }
 
+.text-presentation {
+    font-size: 15px;
+    color: papayawhip;
+    overflow: auto;
+    height: 400px;
+}
 
 .formulaire {
 
@@ -259,7 +350,7 @@ ul {
     font-size: 18px;
     border-radius: 5px;
     background-color: transparent;
-    border: 2px solid #CC6666;
+    border: 2px solid #4A849F;
     padding: 13px;
     margin-bottom: 15px;
     width: 100%;
@@ -267,7 +358,7 @@ ul {
 }
 
 .feedback-input:focus { 
-    border: 2px solid #CC6666
+    border: 2px solid  #4A849F
  }
 
 textarea {
@@ -278,7 +369,7 @@ textarea {
 
 .submit {
     width: 100%;
-    background: #CC6666;
+    background: #4A849F;
     border-radius: 5px;
     border: 0;
     cursor: pointer;
@@ -289,9 +380,234 @@ textarea {
 }
 
 .submit:hover {
-     background:#CC4949; 
+     background:#F2845C; 
 }
 
 textarea {
     margin-left: 20px;
 }
+
+.photo-logo-text {
+    flex-direction: row;
+
+}
+footer {
+    background-color: #F5F1D5;
+}
+/*----- MEDIA QUERIES --------*/
+@media screen and (min-width: 1200px) {
+    .img-size-info {
+        width: 29vw;
+        height: 28vh;
+        margin: 6px;
+        z-index: 2;
+    }
+    h4 {
+        font-size: 15px;
+        text-transform: uppercase;
+    }
+    .skill-title {
+        padding: 14px 14px;
+        margin: 5px;
+        border: solid 1px;
+        display: inline-block;
+        cursor: pointer;
+    }
+    h3 {
+        font-size: 23px;
+
+    }
+
+    h2 {
+        font-size: 50px;
+         text-decoration: none; 
+         margin: 6px;
+    }
+    .text-block {
+        position: absolute;
+        bottom: 50px;
+        font-size: 20px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    h5 {
+        text-align: center;
+        font-size: 24px;
+        margin: 10px;
+    }
+
+    .skill-description>p {
+        font-size: 21px;
+        padding-left: 15px;
+        padding-right: 15px;
+        margin: 7px;
+    }
+
+    .h1-phrase-accroche {
+        justify-content: center;
+        display: flex;
+        text-align: center;
+        color: honeydew;
+        padding-top: 5%;
+        text-transform: uppercase;
+        font-size: 56px;
+    }
+
+    .presentation {
+        width: 77%;
+        justify-content: center;
+        display: flex;
+        text-align: center;
+        font-size: 26px;
+        color: honeydew;
+        font-family: 'Ubuntu', sans-serif;
+    }
+
+    iframe {
+        width: 350px!important;
+        height: 200px!important;
+    }
+
+    .projet-audiovisuel>p {
+        font-size: 20px;
+    }
+
+    .text-presentation {
+        font-size: 24px;
+        color: papayawhip;
+        overflow: auto;
+        height: 55vh;
+        width: 70vw;
+    }
+
+    .photo-et-logo {
+            padding-bottom: 50px;
+
+    }
+    .photo-logo-text {
+        flex-direction: row;
+        height: 56vh;
+    }
+  }
+
+  @media (max-width:500px) and (min-width:300px) and (min-height: 500px) and (max-height:800px){
+
+      .link {
+        font-size: 14px;
+      }
+
+      nav>ul {
+        padding: 0;
+      }
+
+      .flex-mobile {
+          flex-direction: column;
+      }
+
+      article {
+        width: 93vw;
+        height: 29vh;
+      }
+
+      .comp {
+          height: 150vh;
+      }
+
+      h3 {
+        margin: 5px;
+      }
+
+      h2 {
+          margin: 5px;
+      }
+
+      .img-size-info {
+        width: 38vw;
+        height: 14vh;
+      }
+      
+      .text-block {
+        position: absolute;
+        bottom: 21px;
+        font-size: 10px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .compe {
+        height: 70vh;
+    }
+    .projet-audiovisuel {
+        justify-content: space-evenly;
+    }
+
+    .projet-audiovisuel>p {
+        font-size: 13px;
+    }
+
+    iframe {
+        width: 131px;
+        height: 101px;
+    }
+
+    .compet {
+        height: 70vh;
+    }
+    
+    .photo-et-logo>div>img {
+        width: 109px;
+    }
+
+
+    .text-presentation {
+        font-size: 12px;
+        color: papayawhip;
+        overflow: auto;
+        max-height: 45vh;
+    }
+    
+    .img-size-logo {
+        width: 80%;
+    }
+
+    .feedback-input {
+        color: white;
+        font-size: 12px;
+        border-radius: 5px;
+        background-color: transparent;
+        border: 2px solid #4A849F;
+        padding: 1px;
+        margin-bottom: 9px;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    textarea {
+        height: 79px;
+    }
+
+    .submit {
+        height: 30px;
+        font-size: 12px;
+    }
+
+    .photo-logo-text {
+        flex-direction: column;
+        height: 70vh;
+    }
+
+    .competa {
+        max-height: 120vh;
+        min-heigth: 90vh;
+    }
+  }
+  
+    
+
+  @media (max-width:750px) {
+    .img-size-info {
+        width: 39vw;
+    }
+
+  } 

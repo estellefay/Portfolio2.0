@@ -28,8 +28,6 @@ for (let index = 0; index < selectTitle.length; index++) {
 
 
 
-
-
 /*
 
       this.parentElement.querySelector('.skill-group-c1>.skill-items>.skill-title').classList.add('hover');
