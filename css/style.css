@@ -22,6 +22,7 @@ body {
     padding: 0;
     margin: 0;
     font-family: 'Arimo', sans-serif;
+    background-color: #F5F1D5;
 }
 
 .comp {
@@ -39,7 +40,6 @@ body {
 
 h2 {
     font-size: 25px;
-    text-decoration: underline;
 }
 
 
@@ -57,6 +57,10 @@ h4 {
 .hover {
     display: none;
 
+}
+
+.hover-title {
+    display: none!important;
 }
 
 .flex-base {
@@ -92,6 +96,11 @@ h4 {
 
 .little-padding {
     padding: 3px;
+}
+
+.no-padding-left {
+    padding-left: 0;
+
 }
 
 
@@ -213,16 +222,19 @@ article {
 
 .skill-description>p {
     font-size: 12px;
+    text-align: center;
+    padding: 3px;
 }
 
 .skill-description {
-    padding: 10px;
     height: 30vh;
 }
-
 h5 {
+    font-size: 24px;
     text-align: center;
+    margin: 2px;
 }
+
 
 
 /* ---- Partie projet informatique ---- */
@@ -391,9 +403,20 @@ textarea {
     flex-direction: row;
 
 }
+
+
+/*----- FOOTER --------*/
 footer {
     background-color: #F5F1D5;
 }
+footer>ul>li {
+    list-style: none;
+}
+
+
+
+
+
 /*----- MEDIA QUERIES --------*/
 @media screen and (min-width: 1200px) {
     .img-size-info {
@@ -431,14 +454,14 @@ footer {
         padding-right: 20px;
     }
 
-    h5 {
+h5 {
         text-align: center;
-        font-size: 24px;
+        font-size: 22px;
         margin: 10px;
     }
 
     .skill-description>p {
-        font-size: 21px;
+        font-size: 16px;
         padding-left: 15px;
         padding-right: 15px;
         margin: 7px;
@@ -491,10 +514,12 @@ footer {
     }
   }
 
-  @media (max-width:500px) and (min-width:300px) and (min-height: 500px) and (max-height:800px){
+
+  /* -------FOR MOBILE--------- */
+  @media (max-width:500px) and (min-width:200px) and (min-height: 400px) and (max-height:880px){
 
       .link {
-        font-size: 14px;
+        font-size: 12px;
       }
 
       nav>ul {
@@ -521,6 +546,12 @@ footer {
       h2 {
           margin: 5px;
       }
+      .skill-description>p {
+        font-size: 10px;
+        text-align: center;
+        margin: 2px;
+    }
+    
 
       .img-size-info {
         width: 38vw;
@@ -529,14 +560,14 @@ footer {
       
       .text-block {
         position: absolute;
-        bottom: 21px;
-        font-size: 10px;
+        bottom: 7px;
+        font-size: 8px;
         padding-left: 10px;
         padding-right: 10px;
     }
 
     .compe {
-        height: 70vh;
+        height: 75vh;
     }
     .projet-audiovisuel {
         justify-content: space-evenly;
@@ -547,17 +578,17 @@ footer {
     }
 
     iframe {
-        width: 131px;
-        height: 101px;
+        width: 131px!important;
+        height: 101px!important;
     }
 
-    .compet {
-        height: 70vh;
-    }
+
     
     .photo-et-logo>div>img {
         width: 109px;
     }
+
+    
 
 
     .text-presentation {
@@ -601,6 +632,29 @@ footer {
         max-height: 120vh;
         min-heigth: 90vh;
     }
+    .skill-description {
+         height: 30vh;
+     }
+
+     .presentation {
+        width: 77%;
+        justify-content: center;
+        display: flex;
+        text-align: center;
+        font-size: 15px;
+        color: honeydew;
+        font-family: 'Ubuntu', sans-serif;
+     }
+
+     h5 {
+        font-size: 13px;
+     }
+
+     footer>ul>li {
+
+        font-size: 14px;
+    }
+    
   }
   
     
@@ -609,9 +663,6 @@ footer {
 
   @media screen and (max-width: 1200px) and (max-height:900px) {
 
-    body {
-        background: #F2845C;
-    }
 
     .projet-audiovisuel {
         justify-content: space-evenly;
@@ -652,6 +703,25 @@ footer {
         height: 30px;
         font-size: 12px;
     }
+}
+
+/* ----- EXCEPTION ----*/
+@media screen and (min-width: 450px) and (max-width: 1200px) and (max-height:1200px) and (min-height:600px) { 
+    .img-size-info {
+        width: 44vw;
+        height: 28vh;
+        margin: 6px;
+        z-index: 2;
+    }   
+    .compet {
+        height: 75vh;
+    } 
+
+}
 
 
-)
+@media screen and (min-width: 300px) and (max-width: 400px) and (max-height:500px) and (min-height:400px) { 
+    .photo-et-logo>div>img {
+        width: 51px;
+    }
+}
